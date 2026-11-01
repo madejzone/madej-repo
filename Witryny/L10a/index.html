@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Tabele</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #222;
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 24px 0 10px;
+  }
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 600px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  th, td {
+    border: 1px solid #333;
+    width: 60px;
+    height: 52px;
+    padding: 4px;
+    font-size: 18px;
+  }
+  th {
+    background: #bfe5f7;
+    font-weight: normal;
+  }
+  .light-green { background: #dceacb; }
+  .green { background: #cddabd; }
+  .green-dark { background: #c0ccb1; }
+</style>
+</head>
+<body>
+
+<h1>Tabele</h1>
+
+<h2>Tabela 1</h2>
+<table>
+  <tr>
+    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+  </tr>
+  <tr>
+    <th>2</th><td>a</td><td class="light-green">b</td><td class="light-green">c</td><td>d</td><td>e</td>
+  </tr>
+  <tr>
+    <th>3</th><td>f</td><td>g</td><td>h</td><td>i</td><td class="green">j</td>
+  </tr>
+  <tr>
+    <th>4</th><td>k</td><td>l</td><td>m</td><td>n</td><td class="green">o</td>
+  </tr>
+  <tr>
+    <th>5</th><td class="green-dark">p</td><td class="green-dark">q</td><td class="green-dark">r</td><td>s</td><td>t</td>
+  </tr>
+  <tr>
+    <th>6</th><td class="green-dark">u</td><td class="green-dark">v</td><td class="green-dark">w</td><td>y</td><td>z</td>
+  </tr>
+</table>
+
+<h2>Tabela 2</h2>
+<table>
+  <tr>
+    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+  </tr>
+  <tr>
+    <th>2</th><td>a</td><td class="light-green" colspan="2">b, c</td><td>d</td><td>e</td>
+  </tr>
+  <tr>
+    <th>3</th><td>f</td><td>g</td><td>h</td><td>i</td><td class="green" rowspan="2">j, o</td>
+  </tr>
+  <tr>
+    <th>4</th><td>k</td><td>l</td><td>m</td><td>n</td>
+  </tr>
+  <tr>
+    <th>5</th><td class="green-dark" colspan="3" rowspan="2">p, q, r, u, v, w</td><td>s</td><td>t</td>
+  </tr>
+  <tr>
+    <th>6</th><td>y</td><td>z</td>
+  </tr>
+</table>
+
+<h2>Tabela 3</h2>
+<table>
+  <tr>
+    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+  </tr>
+  <tr>
+    <th>2</th><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td>
+  </tr>
+  <tr>
+    <th>3</th><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td>
+  </tr>
+  <tr>
+    <th>4</th><td>k</td><td>l</td><td class="green" colspan="2">m, n</td><td>o</td>
+  </tr>
+  <tr>
+    <th>5</th><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td>
+  </tr>
+  <tr>
+    <th>6</th><td>u</td><td>v</td><td>w</td><td>y</td><td>z</td>
+  </tr>
+</table>
+
+</body>
+</html>
